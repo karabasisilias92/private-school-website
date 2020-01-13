@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box; /* anti tou default content-box, gia na einai synolika border + content diastaseis oso orizoume */
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif !important;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: linen;
+    background-image: url('../images/67657604-line-programming-dark-seamless-pattern-illustration-of-outline-tile-background-coding-resources-.jpg');
+    background-size: 50vw 50vh;
+    background-repeat: repeat;
+}
+
+.bg-mycolor {
+    background-color: rgb(2, 3, 61);
+}
+
+.navbar-brand > img + span {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+#navbarNavDropdown > ul {
+    max-width: calc(100vw - 60px - 1rem);
+    flex-wrap: wrap;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 36px;
+    width: 100vw;
+    font-size: 4em;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(2, 3, 61);
+    /* color: rgb(2, 3, 61);
+    text-shadow: 2px 2px 0px rgba(131, 219, 113, 0.9); */
+}
+
+h2 {
+    margin-top: 36px;
+    width: max-content;
+    /* background-color: rgba(77, 88, 243, 0.596); */
+    font-size: 2em;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(2, 3, 61);
+    /* color: rgb(2, 3, 61);
+    text-shadow: 2px 2px 0px rgba(131, 219, 113, 0.9); */
+}
+
+h3 {
+    margin-top: 36px;
+    width: max-content;
+    /* background-color: rgba(77, 88, 243, 0.596); */
+    font-size: 1.70em;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(2, 3, 61);
+    /* color: rgb(2, 3, 61);
+    text-shadow: 2px 2px 0px rgba(131, 219, 113, 0.9); */
+}
+
+.zero-tab {
+    margin-left: 20px !important;
+}
+
+.one-tab {
+    margin-left: 100px !important;
+}
+
+.two-tabs {
+    margin-left: 180px !important;
+}
+
+#welcomeHeader {
+    text-align: center;
+    padding: 30px;
+    font-size: 6em;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(2, 3, 61);
+    /* color: rgb(2, 3, 61);
+    text-shadow: 2px 2px 0px rgba(131, 219, 113, 0.9); */
+}
+
+main {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listMain {
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+#main {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main > p {
+    font-size: 1.45em;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    border: 2px solid white;
+    background-color: rgba(2, 3, 61, 0.753);
+    width: max-content;
+    padding: 20px;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+}
+
+#section #courseToEdit, #section #courseToUpdate, #section #studentToEdit,
+#section #studentToUpdate, #section #assignmentToEdit, #section #assignmentToUpdate {
+    margin: 5px 0px;
+}
+
+#courseToEdit, #courseToUpdate, #trainerToEdit, 
+#trainerToUpdate, #studentToEdit, #studentToUpdate,
+#assignmentToEdit, #assignmentToUpdate {
+    max-width: 100vw;
+    margin: 20px 0px;
+    color: white;
+    /* background-color: rgb(131, 57, 73); */
+    background-color: rgb(2, 3, 61);
+}
+
+.my-table {
+    margin: 30px 0px;
+    width: max-content;
+    max-width: 90vw;
+    color: white;
+}
+
+.my-thead {
+    background-color: rgb(2, 3, 61);
+    border-bottom: 5px solid;
+}
+
+th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+td {
+    max-width: 45vw;
+}
+
+.tr-odd {
+    background-color: rgba(2, 3, 61, 0.9);
+}
+
+.tr-even {
+    background-color: rgba(101, 89, 212, 0.9);
+}
+
+#formAddTrainer {
+    margin-bottom: 100px;
+}
+
+fieldset {
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+    background-color: rgba(2, 3, 61, 0.7);
+    min-width: 260px; 
+}
+
+legend {
+    padding: 6px;
+    font-size: 2em;
+    color: white;
+    width: max-content;
+    background-color: rgba(101, 89, 212, 0.7);
+    border: 3px solid white;
+}
+
+.fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formElement {
+    display: flex;
+}
+
+.formElement label {
+    padding: 5px 10px 5px 0px;
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    min-width: 100px;
+}
+
+.formElement label.perCourse{
+    width: 110px
+}
+
+.formElement .smallLabel {
+    line-height: 1em;
+}
+
+small {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.formElement .checkboxDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Customize the label for checkbox */
+.formElement .checkboxLabel {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-bottom: 0px;
+    color: white;
+    font-weight: 500;
+    font-size: .95em;
+    width: max-content;
+    max-width: 80vw;
+    margin-bottom: .2rem;
+}
+
+/* Hide the browser's default checkbox */
+.formElement .checkboxLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .formElement .checkboxLabel:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .formElement .checkboxLabel input:checked ~ .checkmark {
+    background-color: rgb(2, 3, 61);
+    border: 1px solid white;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .formElement .checkboxLabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .formElement .checkboxLabel .checkmark:after {
+    left: 4px;
+    top: .5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.formElement .studentLabel {
+    padding: 5px 10px 5px 0px;
+    color: white;
+    font-weight: 700;
+    width: 120px;
+    min-width: 120px;
+}
+
+.formElement .assignmentLabel {
+    padding: 5px 10px 5px 0px;
+    color: white;
+    font-weight: 700;
+    width: 145px;
+    min-width: 145px;
+}
+
+.formElement .assignmentPerStudentLabel {
+    padding: 5px 10px 5px 0px;
+    color: white;
+    font-weight: 700;
+    width: 180px;
+    min-width: 180px;
+}
+
+.formElement #descriptionLabel {
+    padding: 30px 10px 30px 0px;
+    color: white;
+    font-weight: 700;
+    width: 120px;
+    min-width: 145px;
+}
+
+label.width{ /* This rule is used by labels only in Microsoft Edge where width: max-content is not supported */
+    width: 100%;
+}
+
+label.error {
+    color: white;
+    width: max-content;
+    margin-left: 10px;
+}
+
+.formElement #courseId, .formElement #trainerId, .formElement #studentId,
+.formElement #assignmentId {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(2, 3, 61);
+    flex: 1 0 0;
+    min-width: 205px;
+}
+
+.formElement #title, .formElement #firstName, .formElement #lastName, .formElement #subject {
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(2, 3, 61);
+    flex: 1 0 0;
+    min-width: 205px;
+}
+
+.formElement #description {
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(2, 3, 61);
+    min-width: 205px;
+    height: 89px;
+}
+
+.formElement #stream, .formElement #type, .formElement #course,
+.formElement #trainer, .formElement #student, .formElement #assignment {
+    text-align-last: center;
+    margin-bottom: 5px;
+    flex: 1 0 0;
+    color: white;
+    background-color: rgb(2, 3, 61);
+    max-width: 80vw;
+}
+
+.formElement #startDate, .formElement #endDate, .formElement #dateOfBirth,
+.formElement #subDate, .formElement #subTime {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    flex: 1 0 0;
+    background-color: rgb(2, 3, 61);
+}
+
+.formElement #tuitionFees {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    flex: 1 0 0;
+    background-color: rgb(2, 3, 61);
+}
+
+.formElement #tuitionFeesAdd {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    flex: 1 0 0;
+    max-width: 206px;
+    background-color: rgb(2, 3, 61);
+}
+
+.formElement #oralMark, .formElement #totalMark,
+.formElement #studentsOralMark, .formElement #studentsTotalMark {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    flex: 1 0 0;
+    max-width: 80vw;
+    background-color: rgb(2, 3, 61);
+}
+
+.formSubmit {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.formSubmit input[type="submit"], .formSubmit button {
+    padding: 15px 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(101, 89, 212);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    margin-right: 10px;
+}
+
+.formSubmit input[type="submit"]:hover, .formSubmit button:hover {
+    background-color: white;
+    color: rgb(101, 89, 212);
+}
+
+.formSubmit input[type="submit"]:active, .formSubmit button:active {
+    background-color: white;
+    color: rgb(101, 89, 212);
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.formSubmit input[type="submit"]:disabled, .formSubmit button:disabled {
+    background-color: rgba(214, 3, 3, 0.582);
+    color: white;
+    box-shadow: 0 3px #666;
+    transform: translateY(-4px);
+    cursor: initial;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    text-align: center;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    text-align: center;
+}
+
+#description::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    opacity: 1; /* Firefox */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5.3em;
+}
+
+#description:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5.3em;
+}
+  
+#description::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    text-align: center;
+    line-height: 5.3em;
+}
+
+
+
+
+
+
